@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dmq7aelkstitv"]
+
+[ext_resource type="Texture2D" uid="uid://odh1yv7vyusi" path="res://Sprites/Player.png" id="1_p5k30"]
+
+[node name="Player" type="Sprite2D"]
+modulate = Color(0.988235, 0.447059, 0.901961, 1)
+texture = ExtResource("1_p5k30")
