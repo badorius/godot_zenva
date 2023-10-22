@@ -1,9 +1,52 @@
-[gd_scene load_steps=2 format=3 uid="uid://di1e310eo0m1d"]
+[gd_scene load_steps=3 format=3 uid="uid://di1e310eo0m1d"]
 
-[ext_resource type="Texture2D" uid="uid://odh1yv7vyusi" path="res://Sprites/Player.png" id="1_0okwx"]
+[ext_resource type="PackedScene" uid="uid://dmq7aelkstitv" path="res://player.tscn" id="1_2ny6g"]
+[ext_resource type="PackedScene" uid="uid://ck7tdiu338pei" path="res://coin.tscn" id="2_m3vrp"]
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Player" type="Sprite2D" parent="."]
-modulate = Color(0, 0.752941, 0.152941, 1)
-texture = ExtResource("1_0okwx")
+[node name="Player2" parent="." instance=ExtResource("1_2ny6g")]
+position = Vector2(268, -101)
+
+[node name="Player" parent="." instance=ExtResource("1_2ny6g")]
+position = Vector2(-267, -227)
+rotation = -0.00294137
+
+[node name="Player3" parent="." instance=ExtResource("1_2ny6g")]
+position = Vector2(300, 190)
+
+[node name="Player4" parent="." instance=ExtResource("1_2ny6g")]
+position = Vector2(-178, 212)
+
+[node name="Sprite2D2" parent="." instance=ExtResource("2_m3vrp")]
+position = Vector2(0, -99)
+rotation = -0.785397
+
+[node name="Sprite2D6" parent="." instance=ExtResource("2_m3vrp")]
+position = Vector2(-109, -95)
+
+[node name="Sprite2D7" parent="." instance=ExtResource("2_m3vrp")]
+position = Vector2(-118, -7)
+rotation = 2.35619
+
+[node name="Sprite2D8" parent="." instance=ExtResource("2_m3vrp")]
+position = Vector2(117, -3)
+rotation = -3.93074
+
+[node name="Sprite2D9" parent="." instance=ExtResource("2_m3vrp")]
+position = Vector2(-3, 86)
+rotation = -2.35619
+
+[node name="Sprite2D" parent="." instance=ExtResource("2_m3vrp")]
+position = Vector2(111, -83)
+
+[node name="Sprite2D3" parent="." instance=ExtResource("2_m3vrp")]
+position = Vector2(-118, 82)
+
+[node name="Sprite2D4" parent="." instance=ExtResource("2_m3vrp")]
+position = Vector2(120, 80)
+
+[node name="Sprite2D5" parent="." instance=ExtResource("2_m3vrp")]
+position = Vector2(-2, -2)
+rotation = 0.80775
+scale = Vector2(-2.66735, -2.706)

@@ -1,0 +1,41 @@
+[gd_scene load_steps=7 format=3 uid="uid://di27owlj0mhs"]
+
+[ext_resource type="Material" uid="uid://derrkciesc77v" path="res://Materials/Transparent.tres" id="1_wdv6b"]
+[ext_resource type="Material" uid="uid://lnm3slj0c4q7" path="res://Materials/Color.tres" id="2_foo5u"]
+[ext_resource type="Texture2D" uid="uid://dfoyxtppuwfst" path="res://Assets/183180515-snowman-face-set-snowball-face-decoration-vector-in-the-winter-of-christmas.jpg" id="3_8qmre"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_kacw4"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p74tn"]
+albedo_texture = ExtResource("3_8qmre")
+
+[sub_resource type="BoxMesh" id="BoxMesh_wqa31"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Snow" type="Node3D" parent="."]
+transform = Transform3D(1.3, 0, 0, 0, 1.2, 0, 0, 0, 1.3, 0.253475, 0.410977, -0.0501804)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Snow"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.205178, -0.0358839, -0.326508)
+material_override = ExtResource("1_wdv6b")
+mesh = SubResource("SphereMesh_kacw4")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Snow"]
+transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, -0.188262, 0.67977, -0.320315)
+material_override = ExtResource("2_foo5u")
+mesh = SubResource("SphereMesh_kacw4")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Snow"]
+transform = Transform3D(0.28, 0, 0, 0, 0.28, 0, 0, 0, 0.28, -0.174817, 1.11737, -0.330175)
+material_override = SubResource("StandardMaterial3D_p74tn")
+mesh = SubResource("SphereMesh_kacw4")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="Snow"]
+transform = Transform3D(1.63627, 0, 0, 0, 0.115254, 0, 0, 0, 0.142237, -0.175068, 0.741246, -0.349525)
+material_override = ExtResource("2_foo5u")
+mesh = SubResource("BoxMesh_wqa31")
+skeleton = NodePath("../..")
