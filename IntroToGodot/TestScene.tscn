@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://di1e310eo0m1d"]
+[gd_scene load_steps=4 format=3 uid="uid://di1e310eo0m1d"]
 
 [ext_resource type="PackedScene" uid="uid://dmq7aelkstitv" path="res://player.tscn" id="1_2ny6g"]
+[ext_resource type="Script" path="res://IngroToScripting.gd" id="1_ki5x7"]
 [ext_resource type="PackedScene" uid="uid://ck7tdiu338pei" path="res://coin.tscn" id="2_m3vrp"]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_ki5x7")
 
 [node name="Player2" parent="." instance=ExtResource("1_2ny6g")]
 position = Vector2(268, -101)
