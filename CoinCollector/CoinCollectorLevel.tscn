@@ -1,0 +1,59 @@
+[gd_scene load_steps=5 format=3 uid="uid://bwabg3qwtapuv"]
+
+[ext_resource type="Script" path="res://Player.gd" id="1_y5lhw"]
+[ext_resource type="Texture2D" uid="uid://odh1yv7vyusi" path="res://Sprites/Player.png" id="2_6xawt"]
+[ext_resource type="PackedScene" uid="uid://baxpiu0rrf2kk" path="res://coin.tscn" id="3_y5pre"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6ojjq"]
+size = Vector2(52, 66)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Player" type="CharacterBody2D" parent="."]
+script = ExtResource("1_y5lhw")
+
+[node name="Sprite" type="Sprite2D" parent="Player"]
+texture = ExtResource("2_6xawt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+position = Vector2(-1, 15)
+shape = SubResource("RectangleShape2D_6ojjq")
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+zoom = Vector2(1.5, 1.5)
+
+[node name="Coin2" parent="." instance=ExtResource("3_y5pre")]
+position = Vector2(-253, -104)
+
+[node name="Coin" parent="." instance=ExtResource("3_y5pre")]
+position = Vector2(-88, -137)
+
+[node name="Coin3" parent="." instance=ExtResource("3_y5pre")]
+position = Vector2(15, -128)
+
+[node name="Coin4" parent="." instance=ExtResource("3_y5pre")]
+position = Vector2(130, -100)
+
+[node name="Coin5" parent="." instance=ExtResource("3_y5pre")]
+position = Vector2(-249, 75)
+
+[node name="Coin6" parent="." instance=ExtResource("3_y5pre")]
+position = Vector2(-132, 155)
+
+[node name="Coin7" parent="." instance=ExtResource("3_y5pre")]
+position = Vector2(348, 140)
+
+[node name="Coin8" parent="." instance=ExtResource("3_y5pre")]
+position = Vector2(200, 128)
+
+[node name="Coin9" parent="." instance=ExtResource("3_y5pre")]
+position = Vector2(-336, -26)
+
+[node name="Coin10" parent="." instance=ExtResource("3_y5pre")]
+position = Vector2(335, -153)
+
+[node name="Coin11" parent="." instance=ExtResource("3_y5pre")]
+position = Vector2(96, 143)
+
+[node name="Coin12" parent="." instance=ExtResource("3_y5pre")]
+position = Vector2(-332, -189)
