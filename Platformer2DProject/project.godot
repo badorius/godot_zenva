@@ -10,12 +10,6 @@ config_version=5
 
 [application]
 
-config/name="GodotMiniProjects"
-run/main_scene="res://Collision/Collision.tscn"
+config/name="Platformer2DProject"
 config/features=PackedStringArray("4.1", "Forward Plus")
-
-[rendering]
-
-textures/canvas_textures/default_texture_filter=0
-textures/vram_compression/import_etc2_astc=true
-environment/defaults/default_clear_color=Color(0, 0, 0, 1)
+config/icon="res://icon.svg"
