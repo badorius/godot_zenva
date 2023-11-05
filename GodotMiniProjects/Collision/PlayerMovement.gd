@@ -12,3 +12,8 @@ func _physics_process(delta):
 		linear_velocity.x = +move_speed
 		
 		
+
+
+func _on_body_entered(body):
+	if body.is_in_group("Tree"):
+		get_tree().reload_current_scene()# Replace with function body.

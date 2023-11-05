@@ -55,6 +55,8 @@ shape = SubResource("BoxShape3D_eh6vk")
 [node name="Player" type="RigidBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0387971, 6.39235, 13.4678)
 physics_material_override = SubResource("PhysicsMaterial_d3ic1")
+max_contacts_reported = 3
+contact_monitor = true
 script = ExtResource("1_o1mdr")
 
 [node name="body" type="MeshInstance3D" parent="Player"]
@@ -133,3 +135,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9305, 3.49062, 10.096)
 
 [node name="Tree13" parent="." instance=ExtResource("2_byklw")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08251, 3.75062, 9.387)
+
+[connection signal="body_entered" from="Player" to="Player" method="_on_body_entered"]
