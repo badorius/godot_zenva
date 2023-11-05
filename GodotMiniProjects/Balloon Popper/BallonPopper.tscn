@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://csg3r4bc0ukr"]
 
 [ext_resource type="Script" path="res://Balloon Popper/BallonManager.gd" id="1_36ith"]
-[ext_resource type="PackedScene" uid="uid://df5t6jgmayy7h" path="res://Balloon.tscn" id="2_d86ew"]
+[ext_resource type="PackedScene" uid="uid://df5t6jgmayy7h" path="res://Balloon Popper/Balloon.tscn" id="2_d86ew"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_nwna0"]
 font_size = 43
