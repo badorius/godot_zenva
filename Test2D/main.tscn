@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://cmdhpk6m0safm"]
+[gd_scene load_steps=13 format=3 uid="uid://cmdhpk6m0safm"]
 
 [ext_resource type="Script" path="res://Player.gd" id="1_aitye"]
 [ext_resource type="Texture2D" uid="uid://buxeyvn8vru5m" path="res://Assets/idle and  alter/idle sheet-Sheet.png" id="1_utboy"]
@@ -46,6 +46,9 @@ _data = {
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_edqsq"]
 radius = 7.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iv5bw"]
+size = Vector2(237, 20)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8bnt3"]
 texture = ExtResource("2_lhdet")
@@ -2050,6 +2053,8 @@ zoom = Vector2(3, 3)
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-71.5, 92)
+shape = SubResource("RectangleShape2D_iv5bw")
 
 [node name="TileMap" type="TileMap" parent="StaticBody2D"]
 tile_set = SubResource("TileSet_2bvv8")
